@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--
+    HW04：臺中景點介紹網頁
+    本頁依 HW04 作業說明使用純 HTML，不加入 CSS、style 屬性或 JavaScript。
+    註解用來說明各元素的用途與重要屬性；請在提交前確認作者與學號。
+-->
+<html lang="zh-Hant">
+<head>
+    <!-- head 放置網頁中繼資料；這些資料通常不直接顯示在正文中。 -->
+    <meta charset="UTF-8">
+    <!-- UTF-8 可避免繁體中文出現亂碼。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport 讓行動裝置依照裝置寬度顯示頁面。 -->
+    <meta name="description" content="臺中公園景點介紹：認識百年歷史、湖心亭、日月湖與園內文化資產，並透過景點清單、比較表、照片及影片規劃散步行程。">
+    <!-- description 是搜尋結果可能使用的頁面摘要，應清楚概括本頁內容。 -->
+    <meta name="author" content="張睿恩 Alice">
+    <!-- author 標示本頁作者；若老師要求學號，也可一併補在作者欄。 -->
+    <meta name="keywords" content="臺中景點, 臺中公園, 湖心亭, 日月湖, 臺中旅遊, 文化資產">
+    <!-- keywords 不再是 Google 排名的重要因素，但可作為本頁主題註記。 -->
+
+    <!-- Open Graph 中繼資料：設定在社群平台分享時顯示的標題、摘要與圖片。 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="臺中公園：城市裡的百年風景">
+    <meta property="og:description" content="從湖心亭到日月湖，認識臺中公園的歷史、景點特色與散步路線。">
+    <meta property="og:image" content="https://www.taiwan.net.tw/att/1/big_scenic_spots/pic_A12-00079_10.jpg">
+
+    <!-- title 是瀏覽器分頁標題，與正文中顯示的 h1 主標題用途不同。 -->
+    <title>臺中公園景點介紹｜湖心亭、日月湖與百年歷史</title>
+</head>
+
+<body>
+    <!-- header 是頁首，提供報導標題、簡介及作者資訊。 -->
+    <header id="top">
+        <h1>臺中公園：城市裡的百年風景</h1>
+        <p>從湖心亭到日月湖，一起認識臺中市中心的歷史地標與綠色空間。</p>
+        <p>作者：張睿恩 Alice｜報導整理日期：<time datetime="2026-10-22">2026 年 10 月 22 日</time></p>
+        <p><small>本文為參考公開資料整理的景點介紹，並非現場採訪紀錄；出發前請以官方最新資訊為準。</small></p>
+    </header>
+
+    <!-- nav 是頁內導覽區；每個 href 的 #名稱都要對應到頁面中唯一的 id。 -->
+    <nav aria-label="報導目錄">
+        <h2>報導目錄</h2>
+        <ul>
+            <li><a href="#intro">一、臺中公園簡介</a></li>
+            <li><a href="#highlights">二、景點特色與散步順序</a></li>
+            <li><a href="#comparison">三、景點比較表</a></li>
+            <li><a href="#photo">四、湖心亭照片</a></li>
+            <li><a href="#video">五、影音介紹</a></li>
+            <li><a href="#visit">六、交通與參觀提醒</a></li>
+            <li><a href="#sources">七、資料來源</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <!-- main 包含本頁主要內容；article 表示可獨立閱讀的一篇完整報導。 -->
+    <main>
+        <article aria-label="臺中公園景點介紹報導">
+            <!-- section 將內容依主題分段；每個 id 都必須在本頁保持唯一。 -->
+            <section id="intro">
+                <h2>一、臺中公園簡介</h2>
+                <p>
+                    臺中公園位於臺中市北區，是市中心具有歷史意義的公共綠地。
+                    公園於 1903 年 10 月 28 日啟用，園內有湖泊、步道、樹木與歷史建築，
+                    讓民眾能在繁忙的城市生活中散步、休息，也能從環境景觀認識臺中的發展。
+                </p>
+                <p>
+                    公園最具代表性的地標之一是日月湖上的湖心亭。湖心亭於 1908 年興建，
+                    與縱貫鐵路全線通車的歷史有關，後來成為臺中重要的城市意象之一，
+                    並於 1999 年被指定為市定古蹟。它不只是湖面上的建築，也保存了城市交通、
+                    公共空間與歷史記憶交會的故事。
+                </p>
+                <p>
+                    除了湖心亭，臺中公園也有日月湖、橋梁、綠地與其他文化資產。
+                    遊客可以放慢腳步，觀察不同角度的湖景，閱讀現場解說牌，
+                    並留意古蹟與自然環境如何共同構成公園的特色。若安排短程市區旅行，
+                    這裡適合與附近的歷史街區或其他市中心景點搭配參觀。
+                </p>
+                <p>
+                    <strong>景點地址：</strong>臺中市北區雙十路一段 65 號附近。<br>
+                    <strong>主要看點：</strong>湖心亭、日月湖、歷史建築與城市綠地。
+                </p>
+            </section>
+
+            <section id="highlights">
+                <h2>二、景點特色與散步順序</h2>
+                <h3>值得留意的三個特色</h3>
+                <!-- ul 是無序清單，適合列出沒有固定先後順序的景點特色。 -->
+                <ul>
+                    <li><strong>歷史地標：</strong>湖心亭與 1908 年縱貫鐵路全線通車的歷史有關，是公園的重要象徵。</li>
+                    <li><strong>湖畔景觀：</strong>日月湖的水面、橋梁與湖心亭構成公園最具辨識度的景色。</li>
+                    <li><strong>城市綠地：</strong>園內樹木與步道提供休憩空間，也呈現市中心公園的公共價值。</li>
+                </ul>
+
+                <h3>建議散步順序</h3>
+                <p>以下順序是本頁提供的個人參觀建議，並非官方指定路線；實際行走時請依現場告示調整。</p>
+                <!-- ol 是有序清單，瀏覽器會依照 li 的順序顯示編號。 -->
+                <ol>
+                    <li>抵達公園後，先查看入口附近的地圖或導覽資訊，了解園區大致方向。</li>
+                    <li>前往日月湖周邊，從不同角度欣賞湖心亭，觀察建築與湖面景觀。</li>
+                    <li>沿著園內步道散步，留意橋梁、樹木及其他歷史設施。</li>
+                    <li>閱讀現場解說牌，了解古蹟背景；拍照時避免攀爬或觸碰古蹟構件。</li>
+                    <li>離開前確認垃圾已自行帶走，維持公園整潔與自然環境。</li>
+                </ol>
+            </section>
+
+            <section id="comparison">
+                <h2>三、景點比較表</h2>
+                <p>下表整理臺中公園內可留意的地點與參觀重點，方便規劃散步時的觀察方向。</p>
+                <!-- table 用來呈現有欄列關係的資料，不用來排版整個網頁。 -->
+                <table>
+                    <!-- caption 是表格標題，讓讀者與輔助科技理解表格主題。 -->
+                    <caption>臺中公園景點特色與觀察重點</caption>
+                    <thead>
+                        <!-- thead 包住表頭；tr 表示一列，th 表示標題儲存格。 -->
+                        <tr>
+                            <th scope="col">景點名稱</th>
+                            <th scope="col">主要特色</th>
+                            <th scope="col">建議觀察重點</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- tbody 包住資料列；td 是一般資料儲存格，scope="row" 的 th 是該列標題。 -->
+                        <tr>
+                            <th scope="row">湖心亭</th>
+                            <td>1908 年興建的市定古蹟</td>
+                            <td>建築外觀、亭體與縱貫鐵路通車的歷史關係</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">日月湖</th>
+                            <td>湖心亭所在的湖泊，也是公園的重要景觀</td>
+                            <td>湖面倒影、周邊植栽與湖畔視角</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">園內步道與綠地</th>
+                            <td>提供散步、休息與觀察自然的公共空間</td>
+                            <td>樹木、步道動線與公園如何融入城市生活</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="photo">
+                <h2>四、湖心亭照片</h2>
+                <!-- figure 將圖片與圖說組成一個內容單位；figcaption 提供圖片說明及來源。 -->
+                <figure>
+                    <!--
+                        img 的 src 指定圖片網址；alt 應具體描述影像內容，供圖片無法顯示或螢幕閱讀器使用。
+                        width 與 height 提供圖片尺寸資訊；本例使用官方觀光網站圖片，需連網載入。
+                    -->
+                    <img
+                        src="https://www.taiwan.net.tw/att/1/big_scenic_spots/pic_A12-00079_10.jpg"
+                        alt="臺中公園日月湖上的湖心亭與周圍湖景"
+                        width="480"
+                        height="320"
+                        loading="lazy">
+                    <figcaption>
+                        湖心亭是臺中公園的重要歷史地標。圖片來源：
+                        <a href="https://eng.taiwan.net.tw/m1.aspx?id=A12-00126&amp;sNo=0000208"
+                           target="_blank" rel="noopener noreferrer">交通部觀光署：臺中公園景點介紹</a>。
+                        圖片著作權及使用規範請依原網站說明。
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section id="video">
+                <h2>五、影音介紹</h2>
+                <p>可透過影片認識臺中公園與湖心亭，並將影片中的景觀與官方文字資料互相對照。</p>
+                <!--
+                    iframe 用來嵌入 YouTube 播放器。
+                    src 必須使用 https://www.youtube.com/embed/影片ID 格式；
+                    title 描述播放器內容，width/height 設定尺寸，allowfullscreen 允許全螢幕。
+                    若影片作者關閉嵌入功能，或本機 file:// 預覽缺少 Referer，播放器可能無法播放。
+                -->
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/EDfIEohneaA"
+                    title="臺中公園湖心亭介紹影片"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+                <!-- 一般 watch 連結作為備用；它與 iframe 的 /embed/ 網址用途不同。 -->
+                <p>
+                    若播放器無法顯示，可改用
+                    <a href="https://www.youtube.com/watch?v=EDfIEohneaA"
+                       target="_blank" rel="noopener noreferrer">在 YouTube 開啟湖心亭介紹影片</a>。
+                </p>
+                <p><small>影片由外部發布者提供，影片內容與可播放狀態以 YouTube 頁面為準。</small></p>
+            </section>
+
+            <section id="visit">
+                <h2>六、交通與參觀提醒</h2>
+                <p>
+                    臺中公園位於市中心，可先利用大眾運輸抵達臺中車站周邊，再依最新公車資訊步行或轉乘前往。
+                    公車路線與班次可能調整，出發前建議查詢臺中市政府或官方旅遊網站的交通資訊。
+                </p>
+                <ul>
+                    <li>參觀前先查看官方公告，確認園區或個別設施的開放資訊。</li>
+                    <li>尊重古蹟與其他遊客，勿攀爬建築、餵食野生動物或留下垃圾。</li>
+                    <li>若需要無障礙動線、導覽服務或最新交通資訊，請先向官方單位確認。</li>
+                </ul>
+                <p>
+                    官方資訊：
+                    <a href="https://www.taichung.travel/zh-tw/" target="_blank" rel="noopener noreferrer">臺中觀光旅遊網</a>。
+                </p>
+            </section>
+
+            <section id="sources">
+                <h2>七、資料來源</h2>
+                <p>本文依照以下公開資料整理；景點說明以官方資訊為主，散步順序為本頁自行整理的建議。</p>
+                <!-- 外部連結使用 target="_blank" 開新分頁，並搭配 rel="noopener noreferrer" 提升安全性。 -->
+                <ul>
+                    <li>
+                        <a href="https://www.tchac.taichung.gov.tw/building?pid=15&amp;uid=33"
+                           target="_blank" rel="noopener noreferrer">臺中市文化資產處：中山公園湖心亭</a>
+                        ——湖心亭歷史、文化資產身分與所在地資訊。
+                    </li>
+                    <li>
+                        <a href="https://www.tchac.taichung.gov.tw/attractioninfo?pid=22&amp;uid=69"
+                           target="_blank" rel="noopener noreferrer">臺中市文化資產處：臺中公園導覽景點介紹</a>
+                        ——公園沿革與園內文化資產資訊。
+                    </li>
+                    <li>
+                        <a href="https://eng.taiwan.net.tw/m1.aspx?id=A12-00126&amp;sNo=0000208"
+                           target="_blank" rel="noopener noreferrer">交通部觀光署：Taichung Park</a>
+                        ——官方觀光景點介紹及圖片來源。
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=EDfIEohneaA"
+                           target="_blank" rel="noopener noreferrer">YouTube：臺中公園湖心亭介紹影片</a>
+                        ——外部影音資料。
+                    </li>
+                </ul>
+                <p><small>資料整理日期：2026 年 10 月 22 日。出發前請再次確認開放時間與交通資訊。</small></p>
+            </section>
+        </article>
+    </main>
+
+    <hr>
+
+    <!-- footer 是頁尾；回到頁首連結的 href="#top" 對應 header 的 id="top"。 -->
+    <footer>
+        <p>HW04｜臺中景點介紹：臺中公園與湖心亭</p>
+        <p>作者：張睿恩 Alice</p>
+        <p><a href="#top">回到頁首</a></p>
+    </footer>
+</body>
+</html>
